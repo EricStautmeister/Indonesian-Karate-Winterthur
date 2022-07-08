@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Title } from '@mantine/core';
 import { createStyles, Header, Container, Anchor, Group, Burger, Button } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
 import PsLogo from '/ps-logo.png';
@@ -115,7 +116,7 @@ export default function DoubleHeader({ mainLinks, userLinks, navIndex }: DoubleH
 	return (
 		<Header height={HEADER_HEIGHT} mb={120}>
 			<Container className={classes.inner}>
-				<Image src="/ps-logo.png" alt="PS" width={400} height={70} />
+				<Title>Pencak Silat Winterthur</Title>
 				<div className={classes.links}>
 					<Group position="right">{secondaryItems}</Group>
 					<Group spacing={0} position="right" className={classes.mainLinks}>
