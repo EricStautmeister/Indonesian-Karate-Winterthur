@@ -4,16 +4,20 @@ import StdLayout from '../components/stdLayout';
 import HeroContentCenter from '../components/HeroContentCenter';
 import { useScrollLock } from '@mantine/hooks';
 
-const Home: NextPage = () => {
-  const [, setScrollLocked] = useScrollLock();
+const heroText = {
+	text: 'In unserer Schule erlernen Kinder, Jugendliche und Erwachsene die vielseitige Kampfkunst des Indonesischen Karates.',
+};
 
-  useEffect(() => {
-    setScrollLocked(true);
-  }, [setScrollLocked]);
-  
+const Home: NextPage = () => {
+	const [, setScrollLocked] = useScrollLock();
+
+	useEffect(() => {
+		setScrollLocked(true);
+	}, [setScrollLocked]);
+
 	return (
-		<StdLayout navIndex={0} >
-			<HeroContentCenter />
+		<StdLayout navIndex={0}>
+			<HeroContentCenter heroText={heroText} />
 		</StdLayout>
 	);
 };

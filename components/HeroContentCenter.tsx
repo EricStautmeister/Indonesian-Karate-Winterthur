@@ -11,7 +11,7 @@ const useStyles = createStyles((theme) => ({
 		backgroundImage: "url('/psvs.jpg')",
 		backgroundSize: 'fit',
 		backgroundPosition: 'center',
-    overflow : 'hidden',
+		overflow: 'hidden',
 
 		'@media (max-width: 520px)': {
 			paddingTop: 80,
@@ -93,7 +93,13 @@ const useStyles = createStyles((theme) => ({
 	},
 }));
 
-export default function HeroContentCenter() {
+interface Props {
+	heroText: {
+		text: string;
+	};
+}
+
+export default function HeroContentCenter({ heroText }: Props) {
 	const { classes, cx } = useStyles();
 
 	return (
@@ -110,8 +116,7 @@ export default function HeroContentCenter() {
 
 				<Container size={640}>
 					<Text size="lg" className={classes.description}>
-						In unserer Schule erlernen Kinder, Jugendliche und Erwachsene die
-						vielseitige Kampfkunst des Indonesischen Karates.
+						{heroText.text}
 					</Text>
 				</Container>
 
