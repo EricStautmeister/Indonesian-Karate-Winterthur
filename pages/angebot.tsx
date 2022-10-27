@@ -12,9 +12,9 @@ import { ChevronsUp, HandStop, Barbell, Flame } from 'tabler-icons-react';
 const featuresText = [
 	{
 		icon: ChevronsUp,
-		title: 'Indonesian Karate',
+		title: 'Pencak Silat',
 		description:
-			'Indonesian Karate erfordert keine akrobatischen Begabungen und eignet sich für jeden Körperbau und alle Altersklassen. Innere Kraft finden und entfalten ist der Kernpunkt des Systems um die Harmonie von Seele und Körper im Indonesian Karate zu finden.',
+			'Pencak Silat erfordert keine akrobatischen Begabungen und eignet sich für jeden Körperbau und alle Altersklassen. Innere Kraft finden und entfalten ist der Kernpunkt des Systems um die Harmonie von Seele und Körper im Indonesian Karate zu finden.',
 	},
 	{
 		icon: HandStop,
@@ -39,15 +39,15 @@ const featuresText = [
 const targetGroupsText = [
 	{
 		title: 'ERWACHSENE',
-		text: 'Das heutige Berufs- und Familienleben stellt Erwachsenen oft hohe Ansprüche an Leistungsvermögen und Emotionen. Indonesian Karate bietet die Möglichkeit, den oft stressigen Alltag los zu lassen und neue Kraft und Energie zu tanken. Neues Selbstvertrauen kann entwickelt und Aggressionen abgebaut werden. Konzentration und Koordination werden geschult – dabei darf jeder in seinem Tempo lernen. Durch die Auseinandersetzung mit dem eigenen Körper kann der Kopf zur Ruhe finden – ein neues Körperempfinden und eine neue Zufriedenheit können sich einstellen. Das anspruchsvolle Programm lehrt einen Geduld mit sich selber zu üben auf dem Weg Richtung Schwarzgurt.',
+		text: 'Das heutige Berufs- und Familienleben stellt Erwachsenen oft hohe Ansprüche an Leistungsvermögen und Emotionen. Pencak Silat bietet die Möglichkeit, den oft stressigen Alltag los zu lassen und neue Kraft und Energie zu tanken. Neues Selbstvertrauen kann entwickelt und Aggressionen abgebaut werden. Konzentration und Koordination werden geschult – dabei darf jeder in seinem Tempo lernen. Durch die Auseinandersetzung mit dem eigenen Körper kann der Kopf zur Ruhe finden – ein neues Körperempfinden und eine neue Zufriedenheit können sich einstellen. Das anspruchsvolle Programm lehrt einen Geduld mit sich selber zu üben auf dem Weg Richtung Schwarzgurt.',
 	},
 	{
 		title: 'JUGENDLICHE',
-		text: 'Schulen- und Lehrstellen sind in den letzten Jahren kopflastiger geworden. Einerseits werden hohe Ansprüche an Lehrlinge und Schüler gestellt, gleichzeitig aber auch eine hohe Selbstständigkeit erwartet. Indonesian Karate bietet die Möglichkeit, den oft stressigen Schul- oder Lehrstellen-Alltag etwas los zu lassen und neue Kraft und Energie zu tanken. Neues Selbstvertrauen kann entwickelt und Aggressionen abgebaut werden. Konzentration und Koordination werden geschult – dabei darf jeder in seinem Tempo lernen. Durch die Auseinandersetzung mit dem eigenen Körper kann der Kopf zur Ruhe finden – ein neues Körperempfinden und eine neue Zufriedenheit können sich einstellen. Das anspruchsvolle Programm lehrt einen Geduld mit sich selber zu üben auf dem Weg Richtung Schwarzgurt.',
+		text: 'Schulen- und Lehrstellen sind in den letzten Jahren kopflastiger geworden. Einerseits werden hohe Ansprüche an Lehrlinge und Schüler gestellt, gleichzeitig aber auch eine hohe Selbstständigkeit erwartet. Pencak Silat bietet die Möglichkeit, den oft stressigen Schul- oder Lehrstellen-Alltag etwas los zu lassen und neue Kraft und Energie zu tanken. Neues Selbstvertrauen kann entwickelt und Aggressionen abgebaut werden. Konzentration und Koordination werden geschult – dabei darf jeder in seinem Tempo lernen. Durch die Auseinandersetzung mit dem eigenen Körper kann der Kopf zur Ruhe finden – ein neues Körperempfinden und eine neue Zufriedenheit können sich einstellen. Das anspruchsvolle Programm lehrt einen Geduld mit sich selber zu üben auf dem Weg Richtung Schwarzgurt.',
 	},
 	{
 		title: 'KINDER',
-		text: 'Kinder brauchen Bewegung! Mit Indonesian Karate bekommen sie die Möglichkeit, sich „auszuleben“, spielerisch ihre Kräfte zu messen und  neues Selbstvertrauen zu gewinnen. Dabei lernen sie auch, achtsam mit sich selber und ihren Mitschülern und Mitschülerinnen umzugehen. Aggressionen werden abgebaut und Konzentration und Koordination geschult.',
+		text: 'Kinder brauchen Bewegung! Mit Pencak Silat bekommen sie die Möglichkeit, sich „auszuleben“, spielerisch ihre Kräfte zu messen und  neues Selbstvertrauen zu gewinnen. Dabei lernen sie auch, achtsam mit sich selber und ihren Mitschülern und Mitschülerinnen umzugehen. Aggressionen werden abgebaut und Konzentration und Koordination geschult.',
 	},
 ];
 

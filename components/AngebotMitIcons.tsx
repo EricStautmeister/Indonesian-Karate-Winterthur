@@ -73,8 +73,8 @@ export default function AngebotMitIcons({ featuresText, targetGroupsText }: Prop
 					Trainingsangebote
 				</Title>
 				<Text color="dimmed" className={classes.buffer}>
-					Die Unterteilung des Trainings in die drei Bereiche: Indonesian Karate,
-					Selbstverteidigung und Fitness/Stretching erlaubt ein grosses Spektrum an
+					Die Unterteilung des Trainings in die drei Bereiche: Pencak Silat/Indonesian Karate,
+					Selbstverteidigung und Koordination/Fitness/Stretching erlaubt ein grosses Spektrum an
 					Bewegungsformen und Übungsfeldern anzubieten.
 				</Text>
 				<SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>

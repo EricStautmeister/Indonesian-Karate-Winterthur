@@ -11,6 +11,7 @@
 		"deploy": "npm run build && npm run host"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^3.6.2",
 		"@mantine/core": "^4.2.10",
 		"@mantine/form": "^4.2.10",
 		"@mantine/hooks": "^4.2.10",

@@ -78,13 +78,13 @@ interface ContactIconsListProps {
 	variant?: ContactIconVariant;
 }
 
-const MOCKDATA = [
-	{ title: 'Email', description: 'ricky@weissmann.com', icon: At },
+const CONTACTDATA = [
+	{ title: 'Email', description: 'kontakt@macankumbang.ch', icon: At },
 	{ title: 'Telephone', description: '+41 52 232 09 09', icon: Phone },
 	{ title: 'Addresse', description: 'Winterthur, Schweiz', icon: MapPin },
 ];
 
-export function ContactIconsList({ data = MOCKDATA, variant }: ContactIconsListProps) {
+export function ContactIconsList({ data = CONTACTDATA, variant }: ContactIconsListProps) {
 	const items = data.map((item, index) => (
 		<ContactIcon key={index} variant={variant} {...item} />
 	));
