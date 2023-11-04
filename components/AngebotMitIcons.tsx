@@ -19,7 +19,11 @@ const useStyles = createStyles((theme) => ({
 		color: theme.colorScheme === 'dark' ? theme.white : theme.black,
 	},
 
-	buffer: {
+	bufferTop: {
+		marginTop: theme.spacing.xl * 2,
+	},
+
+	bufferBottom: {
 		marginBottom: theme.spacing.xl * 2,
 	},
 }));
@@ -41,11 +45,7 @@ export default function AngebotMitIcons({ featuresText, targetGroupsText }: Prop
 
 	const featureItems = featuresText.map((feature) => (
 		<div key={feature.title}>
-			<ThemeIcon
-				size={44}
-				radius="md"
-				variant="gradient"
-				gradient={{ deg: 133, from: 'blue', to: 'cyan' }}>
+			<ThemeIcon size={44} radius="md" variant="gradient" gradient={{ deg: 133, from: 'blue', to: 'cyan' }}>
 				<feature.icon size={26} />
 			</ThemeIcon>
 			<Text size="lg" mt="sm" weight={500}>
@@ -59,7 +59,7 @@ export default function AngebotMitIcons({ featuresText, targetGroupsText }: Prop
 
 	const targetGroupItems = targetGroupsText.map((targetGroup) => (
 		<>
-			<Text size="xl" mt="sm" weight={800}>
+			<Text size="xl" mt="sm" weight={800} classNames={classes.bufferTop}>
 				{targetGroup.title}
 			</Text>
 			<Text color="dimmed">{targetGroup.text}</Text>
@@ -72,7 +72,7 @@ export default function AngebotMitIcons({ featuresText, targetGroupsText }: Prop
 				<Title className={classes.title} order={2}>
 					Trainingsangebote
 				</Title>
-				<Text color="dimmed" className={classes.buffer}>
+				<Text color="dimmed" className={classes.bufferBottom}>
 					Die Unterteilung des Trainings in die drei Bereiche: Pencak Silat/Indonesian Karate,
 					Selbstverteidigung und Koordination/Fitness/Stretching erlaubt ein grosses Spektrum an
 					Bewegungsformen und Übungsfeldern anzubieten.
@@ -82,13 +82,12 @@ export default function AngebotMitIcons({ featuresText, targetGroupsText }: Prop
 				</SimpleGrid>
 				<Link href="/kontakt" passHref>
 					<Button
-						component="a"
 						variant="gradient"
 						gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
 						size="lg"
 						radius="md"
 						mt="xl"
-						className={classes.buffer}>
+						className={classes.bufferBottom}>
 						Kontakt aufnehmen
 					</Button>
 				</Link>

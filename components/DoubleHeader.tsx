@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Title } from '@mantine/core';
@@ -86,30 +88,29 @@ export default function DoubleHeader({ mainLinks, userLinks, navIndex }: DoubleH
 	const [opened, toggleOpened] = useBooleanToggle(false);
 	const { classes, cx } = useStyles();
 	const [active, setActive] = useState(navIndex);
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
 
 	const mainItems = mainLinks.map((item, index) => (
-		<Link key={item.label} href={item.link} style={{ textDecoration: 'none' }}>
-			<Anchor
-				href={item.link}
-				component="a"
-				className={cx(classes.mainLink, { [classes.mainLinkActive]: index === active })}
-				onClick={(event: React.MouseEvent) => {
-					// event.preventDefault();
-					setActive(index);
-				}}>
-				{item.label}
-			</Anchor>
+		<Link
+			key={item.label}
+			href={item.link}
+			style={{ textDecoration: 'none' }}
+			className={cx(classes.mainLink, { [classes.mainLinkActive]: index === active })}
+			onClick={(event: React.MouseEvent) => {
+				// event.preventDefault();
+				setActive(index);
+			}}>
+			{item.label}
 		</Link>
 	));
 
 	const secondaryItems = userLinks.map((item) => (
-		<Link key={item.label} href={item.link} passHref>
-			<Anchor
-				component="a"
-				// onClick={(event: React.MouseEvent) => event.preventDefault()}
-				className={classes.secondaryLink}>
-				{item.label}
-			</Anchor>
+		<Link key={item.label} href={item.link} passHref className={classes.secondaryLink}>
+			{item.label}
 		</Link>
 	));
 
@@ -123,12 +124,7 @@ export default function DoubleHeader({ mainLinks, userLinks, navIndex }: DoubleH
 						{mainItems}
 					</Group>
 				</div>
-				<Burger
-					opened={opened}
-					onClick={() => toggleOpened()}
-					className={classes.burger}
-					size="sm"
-				/>
+				<Burger opened={opened} onClick={() => toggleOpened()} className={classes.burger} size="sm" />
 			</Container>
 		</Header>
 	);

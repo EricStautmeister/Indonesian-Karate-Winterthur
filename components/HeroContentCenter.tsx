@@ -59,12 +59,15 @@ const useStyles = createStyles((theme) => ({
 		marginTop: theme.spacing.xl * 1.5,
 		display: 'flex',
 		justifyContent: 'center',
-		paddingLeft: theme.spacing.md,
-		paddingRight: theme.spacing.md,
 
 		'@media (max-width: 520px)': {
 			flexDirection: 'column',
 		},
+	},
+
+	link: {
+		paddingLeft: theme.spacing.md/2,
+		paddingRight: theme.spacing.md/2,
 	},
 
 	control: {
@@ -121,16 +124,13 @@ export default function HeroContentCenter({ heroText }: Props) {
 				</Container>
 
 				<div className={classes.controls}>
-					<Link href="/angebot">
-						<Button component="a" className={classes.control} variant="white" size="lg">
+					<Link href="/angebot" className={classes.link}>
+						<Button className={classes.control} variant="white" size="lg">
 							Angebot
 						</Button>
 					</Link>
-					<Link href="/kontakt">
-						<Button
-							component="a"
-							className={cx(classes.control, classes.secondaryControl)}
-							size="lg">
+					<Link href="/kontakt" className={classes.link}>
+						<Button className={cx(classes.control, classes.secondaryControl)} size="lg">
 							Kontakt
 						</Button>
 					</Link>

@@ -1,16 +1,16 @@
 const links = {
 	userLinks: [
+		// {
+		// 	link: '/ueberuns',
+		// 	label: 'Über uns',
+		// },
 		{
-			link: '/ueberuns',
+			link: 'https://indonesiankarate.ch/',
 			label: 'Über uns',
 		},
 		{
-			link: 'https://indonesiankarate.ch/',
-			label: 'IG Indonesian Karate',
-		},
-		{
 			link: 'https://psvs.ch/',
-			label: 'Pencak Silat Verband Schweiz',
+			label: 'Verband',
 		},
 	],
 	mainLinks: [
