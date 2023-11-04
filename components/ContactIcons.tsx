@@ -42,14 +42,7 @@ interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, '
 	variant?: ContactIconVariant;
 }
 
-function ContactIcon({
-	icon: Icon,
-	title,
-	description,
-	variant = 'gradient',
-	className,
-	...others
-}: ContactIconProps) {
+function ContactIcon({ icon: Icon, title, description, variant = 'gradient', className, ...others }: ContactIconProps) {
 	const { classes, cx } = useStyles({ variant });
 	return (
 		<div className={cx(classes.wrapper, className)} {...others}>
@@ -85,9 +78,7 @@ const CONTACTDATA = [
 ];
 
 export function ContactIconsList({ data = CONTACTDATA, variant }: ContactIconsListProps) {
-	const items = data.map((item, index) => (
-		<ContactIcon key={index} variant={variant} {...item} />
-	));
+	const items = data.map((item, index) => <ContactIcon key={index} variant={variant} {...item} />);
 	return <Group direction="column">{items}</Group>;
 }
 
@@ -107,9 +98,9 @@ export function ContactIcons() {
 				sx={(theme) => ({
 					padding: theme.spacing.xl,
 					borderRadius: theme.radius.md,
-					backgroundImage: `linear-gradient(135deg, ${
-						theme.colors[theme.primaryColor][6]
-					} 0%, ${theme.colors[theme.primaryColor][4]} 100%)`,
+					backgroundImage: `linear-gradient(135deg, ${theme.colors[theme.primaryColor][6]} 0%, ${
+						theme.colors[theme.primaryColor][4]
+					} 100%)`,
 				})}>
 				<ContactIconsList variant="white" />
 			</Box>

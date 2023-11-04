@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Title, SimpleGrid, Text, Button, ThemeIcon, Grid, Col } from '@mantine/core';
+import { createStyles, Title, SimpleGrid, Text, Button, ThemeIcon } from '@mantine/core';
 import Link from 'next/link';
 import { Icon } from 'tabler-icons-react';
 

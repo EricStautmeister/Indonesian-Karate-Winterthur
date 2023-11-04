@@ -1,7 +1,7 @@
 import DoubleHeader from './DoubleHeader';
 import Head from 'next/head';
-
 import links from './routes';
+
 import styles from '../styles/Home.module.css';
 
 interface LayoutProps {

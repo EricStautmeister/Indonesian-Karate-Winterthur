@@ -66,8 +66,8 @@ const useStyles = createStyles((theme) => ({
 	},
 
 	link: {
-		paddingLeft: theme.spacing.md/2,
-		paddingRight: theme.spacing.md/2,
+		paddingLeft: theme.spacing.md / 2,
+		paddingRight: theme.spacing.md / 2,
 	},
 
 	control: {

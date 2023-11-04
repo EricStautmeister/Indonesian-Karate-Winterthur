@@ -1,12 +1,9 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import KontaktForm from '../components/KontaktForm';
 import StdLayout from '../components/singleItemLayout';
-import { createStyles, Title, SimpleGrid, Text, Button, ThemeIcon, Grid, Col } from '@mantine/core';
-import Link from 'next/link';
-import { Icon } from 'tabler-icons-react';
+import { createStyles, Text } from '@mantine/core';
+
+import styles from '../styles/Home.module.css';
 
 const useStyles = createStyles((theme) => ({
 	wrapper: {
@@ -24,7 +21,7 @@ const useStyles = createStyles((theme) => ({
 		height: '30rem',
 		backgroundImage: "url('/trainingsort.png')",
 	},
-	
+
 	titles: {
 		fontSize: 32,
 	},
@@ -41,8 +38,8 @@ const Kontakt: NextPage = () => {
 						Trainingsort
 					</Text>
 					<Text color="dimmed">
-						Sportanlage Deutweg (neben der Eishalle). Der Trainingsraum befindet sich
-						neben der Mitteltreppe B, oben in der Tribüne des Sportplatzes
+						Sportanlage Deutweg (neben der Eishalle). Der Trainingsraum befindet sich neben der Mitteltreppe
+						B, oben in der Tribüne des Sportplatzes.
 					</Text>
 				</div>
 				<div className={classes.imageWrapper}></div>

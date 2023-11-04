@@ -34,11 +34,7 @@ export default function Layout({ children, navIndex }: LayoutProps) {
 
 	return (
 		<>
-			<DoubleHeader
-				mainLinks={links.mainLinks}
-				userLinks={links.userLinks}
-				navIndex={navIndex}
-			/>
+			<DoubleHeader mainLinks={links.mainLinks} userLinks={links.userLinks} navIndex={navIndex} />
 			<main style={{ position: 'relative', top: '-7.55rem' }}>
 				<div className={classes.container}>{children}</div>
 			</main>

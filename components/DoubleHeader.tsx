@@ -1,12 +1,8 @@
-'use client';
-
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Title } from '@mantine/core';
-import { createStyles, Header, Container, Anchor, Group, Burger, Button } from '@mantine/core';
+import { createStyles, Header, Container, Group, Burger } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
-import PsLogo from '/ps-logo.png';
 
 const HEADER_HEIGHT = 84;
 
@@ -88,11 +84,6 @@ export default function DoubleHeader({ mainLinks, userLinks, navIndex }: DoubleH
 	const [opened, toggleOpened] = useBooleanToggle(false);
 	const { classes, cx } = useStyles();
 	const [active, setActive] = useState(navIndex);
-	const [isClient, setIsClient] = useState(false);
-
-	useEffect(() => {
-		setIsClient(true);
-	}, []);
 
 	const mainItems = mainLinks.map((item, index) => (
 		<Link

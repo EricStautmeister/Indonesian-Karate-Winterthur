@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-	Paper,
-	Text,
-	TextInput,
-	Textarea,
-	Button,
-	Group,
-	SimpleGrid,
-	createStyles,
-} from '@mantine/core';
+import { Paper, Text, TextInput, Textarea, Button, Group, SimpleGrid, createStyles } from '@mantine/core';
 import { ContactIconsList } from './ContactIcons';
 
 const useStyles = createStyles((theme) => {
@@ -20,9 +11,7 @@ const useStyles = createStyles((theme) => {
 			backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
 			borderRadius: theme.radius.lg,
 			padding: 4,
-			border: `1px solid ${
-				theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
-			}`,
+			border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]}`,
 
 			[BREAKPOINT]: {
 				flexDirection: 'column',
