@@ -18,7 +18,7 @@
 		"@mantine/next": "^4.2.10",
 		"firebase": "^10.5.2",
 		"next": "^14.0.1",
-		"npm": "^10.2.2",
+		"npm": "^10.9.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"tabler-icons-react": "^1.51.0"
