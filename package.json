@@ -12,7 +12,7 @@
 	},
 	"dependencies": {
 		"@emailjs/browser": "^3.6.2",
-		"@mantine/core": "^4.2.10",
+		"@mantine/core": "^7.0.0",
 		"@mantine/form": "^4.2.10",
 		"@mantine/hooks": "^4.2.10",
 		"@mantine/next": "^4.2.10",
